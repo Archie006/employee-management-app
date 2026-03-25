@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Contacts</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="main.js"></script>
+    
 </head>
 <body>
     <nav>
@@ -15,6 +15,32 @@
     </nav>
 
     <h2>Employee List</h2>
-    
+    <table border="1">
+    <tbody id="employeeTableBody">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Department</th>
+                <th>Position</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>John Doe</td>
+            <td>john.doe@example.com</td>
+            <td>123-456-7890</td>
+            <td>Engineering</td>
+            <td>Software Engineer</td>
+            <td><button onclick="showDetails(1)">Details</button>
+                <button onclick="editEmployee(1)">Edit</button>
+                <button onclick="deleteEmployee(1)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+
+    </table>
+    <script src="main.js"></script>
 </body>
 </html>
