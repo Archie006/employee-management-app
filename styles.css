@@ -82,3 +82,26 @@ text-align:left;
 .upload-btn:hover{
     background:black;
 }
+.gender-group {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.gender-group label {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin: 0;
+}
+
+td {
+    white-space: nowrap;
+}
+
+td button {
+    margin: 1px;
+    padding: 5px 8px;
+    display: inline-block;
+}
