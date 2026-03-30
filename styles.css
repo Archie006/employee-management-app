@@ -1,7 +1,14 @@
 body{ 
     font-family:Arial;
-    margin:0%;
-    background-color:greenyellow;
+    margin:0;
+}
+body.home-page{
+    background-image: url("images/companyLogo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
 Nav{
     background-color:blue;
@@ -17,6 +24,14 @@ nav a{
     width:80%;
     margin:auto;
     margin-top:30px;
+}
+.home-page .container{
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 form{
     background:pink;
