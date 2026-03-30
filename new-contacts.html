@@ -3,25 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Cotacts</title>
+    <title>New Contact</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <nav>
         <a href="index.html">Home</a>
-        <a href="new-contacts.html">New Contacts</a>
+        <a href="new-contacts.html">New Contact</a>
         <a href="view-contacts.html">View Contacts</a>
     </nav>
 
+    <div class="container">
         <h2>Add New Employee</h2>
+
         <form>
-            <input type="text" placeholder="Full Name"><br><br>
-            <input type="email" placeholder="Email"><br><br>
-            <input type="tel" placeholder="Phone"><br><br>
-            <input type="text" placeholder="Department"><br><br>
-            <input type="text" placeholder="Position"><br><br>
-            <button type="submit">Submit</button>
+            <div class="photo-upload">
+                <img src="images/employee.png" id="preview" alt="Profile Photo" width="100">
+                
+                <br><br>
+                <label for="fileInput" class="upload-btn">Add Photo</label>
+                <input type="file" id="fileInput" accept="image/*">
+            </div>
+
+            <label>First Name</label>
+            <input type="text" id="firstName" required>
+
+            <label>Last Name</label>
+            <input type="text" id="lastName" required>
+
+            <p>Select your gender:</p>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+
+            <br><br>
+
+            <label>Phone</label>
+            <input type="tel" id="phone" required>
+
+            <label>Email</label>
+            <input type="email" id="email" required>
+
+            <label>Address</label>
+            <input type="text" id="address">
+
+            <label>Date of Birth</label>
+            <input type="date" id="dob">
+
+            <label>Position</label>
+            <input type="text" id="position">
+
+            <br><br>
+
+            <button type="submit">Save Employee</button>
         </form>
+    </div>
+
     <script src="main.js"></script>
 </body>
 </html>
